@@ -1,3 +1,0 @@
-2026-03-15T02:05:38.532+09:00  INFO 8060 --- [Encoding & Decoding Toolkit API] [main] com.oha_yo.codec.ApplicationTests        : Starting ApplicationTests using Java 21.0.5 with PID 8060 (started by atsuc in C:\work\code-transformer-api)
-2026-03-15T02:05:38.535+09:00  INFO 8060 --- [Encoding & Decoding Toolkit API] [main] com.oha_yo.codec.ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
-2026-03-15T02:05:40.601+09:00  INFO 8060 --- [Encoding & Decoding Toolkit API] [main] com.oha_yo.codec.ApplicationTests        : Started ApplicationTests in 2.59 seconds (process running for 4.834)
