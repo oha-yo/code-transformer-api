@@ -11,6 +11,7 @@
 	<groupId>com.oha-yo</groupId>
 	<artifactId>code-transformer-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>Encoding &amp; Decoding Toolkit API</name>
 	<description>マルチフォーマット対応のエンコード・デコード用Web APIサービス</description>
 	<url/>
@@ -34,7 +35,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc</artifactId>
 		</dependency>
-
+		
+		<!-- WARデプロイ方式として以下を追加 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+    
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
@@ -43,6 +51,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>code-transformer-api</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
