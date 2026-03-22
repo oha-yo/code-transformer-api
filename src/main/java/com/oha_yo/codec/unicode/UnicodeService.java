@@ -1,9 +1,12 @@
 package com.oha_yo.codec.unicode;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UnicodeService {
+	private static final Logger logger = LoggerFactory.getLogger(UnicodeController.class);
 
     /**
      * 文字列をUnicodeエスケープ形式に変換する
@@ -29,6 +32,7 @@ public class UnicodeService {
                     break;
             }
         }
+        logger.info("UnicodeService.encode: {}", sb.toString());
         return sb.toString();
     }
 }
